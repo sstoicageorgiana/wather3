@@ -1,0 +1,87 @@
+html {
+    background-color: rgb(244, 245, 248);
+}
+
+body {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.weatherNow {
+    background-color: rgb(238, 223, 223);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4);
+}
+
+.displayForcast {
+    background-color: rgb(238, 223, 223);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4);
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+button {
+    font-size: 20px;
+    height: 36px;
+    background-color: rgb(211, 137, 211);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#button1 {
+    margin-right: 60px;
+}
+
+#weatherInfo {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+#tableNow {
+    flex: 1;
+    width: 15%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.followingDays {
+    background-color: rgb(238, 223, 223);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .4);
+}
+
+.data {
+    background-color: rgb(187, 224, 224);
+}
+
+.alldays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

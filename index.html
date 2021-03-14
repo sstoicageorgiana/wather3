@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Wheather App 2</title>
+    <link rel="stylesheet" type="text/css" href="cssweather.css" />
+</head>
+
+<body>
+    <div class="displayForcast">
+        <input type="text" id="cityName" placeholder="Type location" onblur="hideForecast();">
+        <button id="button1" onclick="weatherNow();">Show weather</button>
+        <button id="button2" onclick="forecastWeather();">Show forecast</button>
+    </div>
+    <div class="weatherNow">
+        <div>
+            <h1>Weather now</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <div id="tableNow">
+                <div><span id="vremea0"><img src=""></span></div>
+                <div> Description : <span id="description"></span></div>
+                <div> Humidity : <span id="humidity"></span></div>
+                <div> Pressure : <span id="pressure"></span></div>
+                <div> Current temperature : <span id="temp"></span></div>
+                <div> Minimum of the day : <span id="min"></span></div>
+                <div> Maximum of the day : <span id="max"></span></div>
+            </div>
+            <div class="map hidden">
+                <div class="gmap_canvas"><iframe width="800" height="500" id="gmap_canvas" src="" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yt2.org"></a><br>
+                    <style>
+                        .map {
+                            flex: 3;
+                            text-align: right;
+                            height: 220px;
+                            width: 500px;
+                            margin-top: 1%;
+                        }
+                    </style>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 230px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="followingDays">
+        <div>
+            <h1>The weather in the following days</h1>
+            <hr>
+        </div>
+        <div class="forecast hidden">
+            <div class="alldays">
+                <div class="days"></div>
+            </div>
+        </div>
+    </div>
+    <script src="jsWether.js"></script>
+</body>
+
+</html>
